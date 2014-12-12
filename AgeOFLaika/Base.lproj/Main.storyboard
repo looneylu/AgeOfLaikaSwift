@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="AgeOFLaika" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dog Years" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rt7-fK-Cn2">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="160" y="52" width="80" height="21"/>
+                                </variation>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Human Years" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jaP-5G-EtH">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="89" y="81" width="223" height="30"/>
+                                </variation>
+                            </textField>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5hZ-Mh-MAx">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="X69-br-iZ8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="X69-br-iZ8"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="89" y="151" width="223" height="21"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="X69-br-iZ8"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tzN-jV-szZ">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Convert to Dog Years">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="127" y="119" width="147" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="convertToDogYearsButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="wOg-ad-n5Z"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AgeOfLaika.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="UKx-9P-yXl">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="fEX-Xg-mR3"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="fEX-Xg-mR3"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="33" y="180" width="334" height="400"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="fEX-Xg-mR3"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="UKx-9P-yXl" secondAttribute="bottom" id="9wA-4i-4tl"/>
+                            <constraint firstItem="5hZ-Mh-MAx" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="AJ5-7I-zBs"/>
+                            <constraint firstItem="Rt7-fK-Cn2" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="AaS-tp-5jJ"/>
+                            <constraint firstItem="UKx-9P-yXl" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="By1-jB-DQk"/>
+                            <constraint firstItem="Rt7-fK-Cn2" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="Gpb-6K-d1D"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="UKx-9P-yXl" secondAttribute="trailing" constant="-16" id="Luc-mR-LDN"/>
+                            <constraint firstItem="Rt7-fK-Cn2" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="OKK-Dy-lsN"/>
+                            <constraint firstItem="jaP-5G-EtH" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="PuK-Kg-k2Z"/>
+                            <constraint firstItem="jaP-5G-EtH" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="f0E-8t-Oyk"/>
+                            <constraint firstItem="tzN-jV-szZ" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="mH9-oU-CfY"/>
+                            <constraint firstItem="tzN-jV-szZ" firstAttribute="top" secondItem="jaP-5G-EtH" secondAttribute="bottom" constant="8" id="nZp-2j-bEh"/>
+                            <constraint firstItem="jaP-5G-EtH" firstAttribute="top" secondItem="Rt7-fK-Cn2" secondAttribute="bottom" constant="8" id="sjz-qK-9EN"/>
+                            <constraint firstItem="tzN-jV-szZ" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="tTz-3N-TFo"/>
+                            <constraint firstItem="5hZ-Mh-MAx" firstAttribute="top" secondItem="tzN-jV-szZ" secondAttribute="bottom" constant="8" id="ucg-IO-hTJ"/>
+                            <constraint firstItem="5hZ-Mh-MAx" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="w4P-Sd-cuu"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Rt7-fK-Cn2"/>
+                                <exclude reference="jaP-5G-EtH"/>
+                                <exclude reference="5hZ-Mh-MAx"/>
+                                <exclude reference="tzN-jV-szZ"/>
+                                <exclude reference="UKx-9P-yXl"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="AaS-tp-5jJ"/>
+                                <exclude reference="Gpb-6K-d1D"/>
+                                <exclude reference="OKK-Dy-lsN"/>
+                                <exclude reference="PuK-Kg-k2Z"/>
+                                <exclude reference="f0E-8t-Oyk"/>
+                                <exclude reference="sjz-qK-9EN"/>
+                                <exclude reference="mH9-oU-CfY"/>
+                                <exclude reference="nZp-2j-bEh"/>
+                                <exclude reference="tTz-3N-TFo"/>
+                                <exclude reference="AJ5-7I-zBs"/>
+                                <exclude reference="ucg-IO-hTJ"/>
+                                <exclude reference="w4P-Sd-cuu"/>
+                                <exclude reference="By1-jB-DQk"/>
+                                <exclude reference="Luc-mR-LDN"/>
+                                <exclude reference="9wA-4i-4tl"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Rt7-fK-Cn2"/>
+                                <include reference="jaP-5G-EtH"/>
+                                <include reference="5hZ-Mh-MAx"/>
+                                <include reference="tzN-jV-szZ"/>
+                                <include reference="UKx-9P-yXl"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="AaS-tp-5jJ"/>
+                                <include reference="Gpb-6K-d1D"/>
+                                <include reference="OKK-Dy-lsN"/>
+                                <include reference="PuK-Kg-k2Z"/>
+                                <include reference="f0E-8t-Oyk"/>
+                                <include reference="sjz-qK-9EN"/>
+                                <include reference="mH9-oU-CfY"/>
+                                <include reference="nZp-2j-bEh"/>
+                                <include reference="tTz-3N-TFo"/>
+                                <include reference="AJ5-7I-zBs"/>
+                                <include reference="ucg-IO-hTJ"/>
+                                <include reference="w4P-Sd-cuu"/>
+                                <include reference="By1-jB-DQk"/>
+                                <include reference="Luc-mR-LDN"/>
+                                <include reference="9wA-4i-4tl"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="conversionLabel" destination="5hZ-Mh-MAx" id="qhT-XN-MYa"/>
+                        <outlet property="humanYearsTextField" destination="jaP-5G-EtH" id="i6Z-Qq-PLQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="162" y="348.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="AgeOfLaika.jpg" width="1057" height="654"/>
+    </resources>
+</document>
